@@ -1,37 +1,50 @@
 <!DOCTYPE html>
+<!-- Created By CodingNepal -->
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-  <script src="assets/js/main.js"></script>
-  <title>Document</title>
-</head>
-<body>
-  <form style="text-align: center;">
-
-    <input type="text" name="t1" id="t1"><br> <br/>
-    <input type="text" name="t2" id="t2"><br/> <br/>
-    <h5>Sonuç</h5>
-    <input type="text" name="t3" id="t3"><br/> <br/>
-
-    <input type="button" value="Topla" name="topla" id="topla" style="margin:10px;"> 
-    <input type="button" value="Çıkart" name="cikart" id="cikart"><br/>
-    <input type="button" value="Çarp" name="carp" id="carp" style="margin:10px;">
-    <input type="button" value="Böl" name="bol" id="bol">
-    <input type="button" value="Temizle" name="temızle" id="temızle" style="margin: 10px;">
-    
- </form>
- <hr/>
-</body>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="assets/css/main.css">
+      <script src=""></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   </head>
+   <body>
+    <div class="calculator">
+      <form name="form">
+        <input class="inputDisplay">
+      </form>
+      <table>
+        <tr>
+          <td><input type="button" value="AC" onclick="clearInput()" style = "background-color: red"></td>
+          <td><input type="button" value="<" onclick="deleteCharacter()"></td>
+          <td><input type="button" value="/" onclick="insertCharacter('/')"></td>
+          <td><input type="button" value="÷" onclick="insertCharacter('/')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="7" onclick="insertCharacter(7)"></td>
+          <td><input type="button" value="8" onclick="insertCharacter(8)"></td>
+          <td><input type="button" value="9" onclick="insertCharacter(9)"></td>
+          <td><input type="button" value="x" onclick="insertCharacter('*')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="4" onclick="insertCharacter(4)"></td>
+          <td><input type="button" value="5" onclick="insertCharacter(5)"></td>
+          <td><input type="button" value="6" onclick="insertCharacter(6)"></td>
+          <td><input type="button" value="-" onclick="insertCharacter('-')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="1" onclick="insertCharacter(1)"></td>
+          <td><input type="button" value="2" onclick="insertCharacter(2)"></td>
+          <td><input type="button" value="3" onclick="insertCharacter(3)"></td>
+          <td><input type="button" value="+" onclick="insertCharacter('+')"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="button" value="0" onclick="insertCharacter(0)" style="width: 158px; ;"></td>
+          <td><input type="button" value="," onclick="insertCharacter('.')"></td>
+                    
+          <td rowspan=1><input type="button" value="=" onclick="result()"style="background-color:orange"></td>
+        </tr>
+      </table>
+    </div>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+   </body>
 </html>
-
-
-
-
-
-
-
-
-
