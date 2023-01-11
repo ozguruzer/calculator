@@ -1,50 +1,60 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="assets/css/main.css">
-      <script src=""></script>
-      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-   </head>
-   <body>
-    <div class="calculator">
-      <form name="form">
-        <input class="inputDisplay">
-      </form>
-      <table>
-        <tr>
-          <td><input type="button" value="AC" onclick="clearInput()" style = "background-color: red"></td>
-          <td><input type="button" value="<" onclick="deleteCharacter()"></td>
-          <td><input type="button" value="/" onclick="insertCharacter('/')"></td>
-          <td><input type="button" value="÷" onclick="insertCharacter('/')"></td>
-        </tr>
-        <tr>
-          <td><input type="button" value="7" onclick="insertCharacter(7)"></td>
-          <td><input type="button" value="8" onclick="insertCharacter(8)"></td>
-          <td><input type="button" value="9" onclick="insertCharacter(9)"></td>
-          <td><input type="button" value="x" onclick="insertCharacter('*')"></td>
-        </tr>
-        <tr>
-          <td><input type="button" value="4" onclick="insertCharacter(4)"></td>
-          <td><input type="button" value="5" onclick="insertCharacter(5)"></td>
-          <td><input type="button" value="6" onclick="insertCharacter(6)"></td>
-          <td><input type="button" value="-" onclick="insertCharacter('-')"></td>
-        </tr>
-        <tr>
-          <td><input type="button" value="1" onclick="insertCharacter(1)"></td>
-          <td><input type="button" value="2" onclick="insertCharacter(2)"></td>
-          <td><input type="button" value="3" onclick="insertCharacter(3)"></td>
-          <td><input type="button" value="+" onclick="insertCharacter('+')"></td>
-        </tr>
-        <tr>
-          <td colspan="2"><input type="button" value="0" onclick="insertCharacter(0)" style="width: 158px; ;"></td>
-          <td><input type="button" value="," onclick="insertCharacter('.')"></td>
-                    
-          <td rowspan=1><input type="button" value="=" onclick="result()"style="background-color:orange"></td>
-        </tr>
-      </table>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <title>calculator</title>
+</head>
+
+<body>
+  <div class="calculator mx-auto mt-5">
+    <div class="container">
+      <div class="row mx-auto">
+        <form action="" class="pb-4">
+          <input type="text" class="inputCalculator" disabled>
+        </form>
+        <table class="">
+          <tr class="">
+            <td><input type="button" value="AC"></td>
+            <td><input type="button" value="+/-"></td>
+            <td><input type="button" value="%"></td>
+            <td><input type="button" value="÷" class="pb-2"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="7"></td>
+            <td><input type="button" value="8"></td>
+            <td><input type="button" value="9""></td>
+            <td><input type="button" value="x" class="pb-2"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="4"></td>
+            <td><input type="button" value="5"></td>
+            <td><input type="button" value="6"></td>
+            <td><input type="button" value="-" class="pb-2"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="1"></td>
+            <td><input type="button" value="2"></td>
+            <td><input type="button" value="3"></td>
+            <td><input type="button" value="+" class="pb-2"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="button" value="0" style="width: 210px;"></td>
+            <td><input type="button" value="," class="pb-5"></td>
+            <td rowspan=2><input type="button" value="=" class="pb-2"></td>
+          </tr>
+        </table>
+      </div>
     </div>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-   </body>
+  </div>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
 </html>

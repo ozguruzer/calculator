@@ -1,26 +1,23 @@
-* {
-	margin: 0;
-	padding: 0;
-	font-size: 35px;
+body{
+	font-size: 30px;
 }
 .calculator {
-	width: 320px;
-	margin: auto;
-	background-color:purple;
-	padding:10px;
-  border-radius: 10px;
+	width: 580px;
+	background-color:darkslateblue;
+	padding: 60px;
+  border-radius: 150px;
 }
 
-.inputDisplay {
-	width: 100%;
-	height: 80px;
-	background-color: #a2af77;
+.inputCalculator {
+	width: 415px;
+	height: 100px;
+	background-color: wheat;
 }
 
 input[type=button] {
-	width: 80px;
-	height: 80px;
-	margin: px;
+	width: 100px;
+	height: 100px;
 	color: #fff;
-	background-color: plum
+	background-color: steelblue;
+	border-radius: 50px;
 } 
