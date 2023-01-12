@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/main.css">
-  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-    crossorigin="anonymous"></script>
   <title>calculator</title>
 </head>
 
@@ -22,33 +22,33 @@
         </form>
         <table class="">
           <tr class="">
-            <td><input type="button" value="AC"></td>
-            <td><input type="button" value="+/-"></td>
-            <td><input type="button" value="%"></td>
-            <td><input type="button" value="÷" class="pb-2"></td>
+            <td><input type="button" value="AC" onclick="clearCalc()"></td>
+            <td><input type="button" value="+/-" onclick="insertCalc"></td>
+            <td><input type="button" value="%" onclick="insertCalc(½)"></td>
+            <td><input type="button" value="÷" class="pb-2" onclick="insertCalc('/')"></td>
           </tr>
           <tr>
-            <td><input type="button" value="7"></td>
-            <td><input type="button" value="8"></td>
-            <td><input type="button" value="9""></td>
-            <td><input type="button" value="x" class="pb-2"></td>
+            <td><input type="button" value="7" onclick="insertCalc(7)"></td>
+            <td><input type="button" value="8" onclick="insertCalc(8)"></td>
+            <td><input type="button" value="9" onclick="insertCalc(9)"></td>
+            <td><input type="button" value="x" class="pb-2" onclick="insertCalc('*')"></td>
           </tr>
           <tr>
-            <td><input type="button" value="4"></td>
-            <td><input type="button" value="5"></td>
-            <td><input type="button" value="6"></td>
-            <td><input type="button" value="-" class="pb-2"></td>
+            <td><input type="button" value="4" onclick="insertCalc(4)"></td>
+            <td><input type="button" value="5" onclick="insertCalc(5)"></td>
+            <td><input type="button" value="6" onclick="insertCalc(6)"></td>
+            <td><input type="button" value="-" class="pb-2" onclick="insertCalc('-')"></td>
           </tr>
           <tr>
-            <td><input type="button" value="1"></td>
-            <td><input type="button" value="2"></td>
-            <td><input type="button" value="3"></td>
-            <td><input type="button" value="+" class="pb-2"></td>
+            <td><input type="button" value="1" onclick="insertCalc(1)"></td>
+            <td><input type="button" value="2" onclick="insertCalc(2)"></td>
+            <td><input type="button" value="3" onclick="insertCalc(3)"></td>
+            <td><input type="button" value="+" class="pb-2" onclick="insertCalc('+')"></td>
           </tr>
           <tr>
-            <td colspan="2"><input type="button" value="0" style="width: 210px;"></td>
-            <td><input type="button" value="," class="pb-5"></td>
-            <td rowspan=2><input type="button" value="=" class="pb-2"></td>
+            <td colspan="2"><input type="button" value="0" style="width: 210px;" onclick="insertCalc(0)"></td>
+            <td><input type="button" value="," onclick="insertCalc(',')" class="pb-4"></td>
+            <td rowspan=2><input type="button" value="=" class="pb-2" onclick="result('=')"></td>
           </tr>
         </table>
       </div>
